@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gesangstraining</string>
+    <string name="comparison_activity_title">You can activate error detection by tapping on the diagrams!</string>
+    <string name="selection_activity_title">Please select two files that you want to compare!</string>
+    <string name="home_activity_error_detection_button_title">Error detection</string>
+    <string name="home_activity_selection_button_title">Selection</string>
+    <string name="home_activity_visualising_button_title">Visualising</string>
+    <string name="home_activity_credits_button_title">Credits</string>
+    <string name="deletion_button_text">Delete All Files</string>
+    <string name="credits_header">Credits</string>
+    <string name="credits_text">This application has been produced by Andreas Baldinger and Anna Maric at FH Hagenberg, Upper Austria</string>
+
+</resources>

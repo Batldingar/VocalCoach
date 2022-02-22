@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.baldware.gesangstraining.Views.SpectrogramView
+        android:id="@+id/errorDetection_spectrogram_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/errorDetection_frequency_text_view" />
+
+    <com.baldware.gesangstraining.Views.FrequencyTextView
+        android:id="@+id/errorDetection_frequency_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorDetection_spectrogram_view"
+        app:layout_constraintBottom_toTopOf="@+id/errorDetection_frequency_view" />
+
+    <com.baldware.gesangstraining.Views.FrequencyView
+        android:id="@+id/errorDetection_frequency_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorDetection_frequency_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/errorDetection_singer_advice_text_view_1" />
+
+    <com.baldware.gesangstraining.Views.AdviceTextView
+        android:id="@+id/errorDetection_singer_advice_text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorDetection_frequency_view"
+        app:layout_constraintBottom_toTopOf="@+id/errorDetection_singer_advice_text_view_2" />
+
+    <com.baldware.gesangstraining.Views.AdviceTextView
+        android:id="@+id/errorDetection_singer_advice_text_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorDetection_singer_advice_text_view_1"
+        app:layout_constraintBottom_toTopOf="@+id/errorDetection_bottom_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/errorDetection_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="15dp"
+        android:elevation="3dp"
+        app:itemRippleColor="@color/black"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="unlabeled"
+        android:background="@drawable/rounded_corners"
+        app:itemIconTint="#052239"
+        app:menu="@menu/bottom_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

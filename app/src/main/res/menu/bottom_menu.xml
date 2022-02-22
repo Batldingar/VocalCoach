@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pause_resume_menu_item"
+        android:icon="@drawable/ic_baseline_play_arrow_24"
+        android:title="Play/Resume" />
+    <item
+        android:id="@+id/save_menu_item"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="Save" />
+
+</menu>
